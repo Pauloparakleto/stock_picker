@@ -4,7 +4,6 @@ def stock_picker array_of_prices
     @profit = 0
     @days = []
     for i in 0...@array_of_prices.length 
-        #puts @array_of_prices[i] 
         for j in 0...@array_of_prices.length
             #Adding the conditional && at the end of the follow condition, will avoid the machine to change the @profit and @days variables
             # for cases where the day to buy is AFTER the day to sell.
